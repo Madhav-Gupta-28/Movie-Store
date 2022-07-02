@@ -1,0 +1,162 @@
+.movie-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-article > img {
+  max-width: 400px;
+  min-width: auto;
+  max-height: 500px;
+  min-height: 400px;
+}
+
+.movie-article > div > h4 {
+  padding: 1rem 0 0 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #333;
+  border: none;
+}
+
+.movie-article > div > p {
+  padding: 1rem 0 0 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.movie-info {
+  overflow: hidden;
+  width: 300px;
+  height: 45px;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  border-top-color: aqua;
+  animation: spinner 0.6s linear infinite;
+}
+
+@media screen and (min-width: 992px) {
+  .single-movie {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.single-movie {
+  margin-top: 5rem;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10rem;
+  max-width: 80rem;
+  justify-content: flex-start;
+  /* align-items: center; */
+}
+
+.single-movie-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.single-movie > img {
+  max-width: 500px;
+  max-height: 590px;
+}
+
+.single-movie-info > h2 {
+  color: #333;
+  font-weight: 1000;
+  font-size: 2.4rem;
+}
+
+.single-movie-info > p {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.single-movie-info > h4 {
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.page-error {
+  text-align: center;
+  padding: 2rem;
+}
+
+.btn {
+  color: #fff;
+  font-weight: 1000;
+  font-size: 1.5rem;
+  text-decoration: none;
+  max-width: 180px;
+  background-color: aqua;
+  padding: 8px 10px;
+  border-radius: 8px;
+  align-content: center;
+}
+
+.btn:hover {
+  transition: all 0.6s;
+  color: aquamarine;
+  font-weight: 1000;
+  font-size: 1.5rem;
+  text-decoration: none;
+  max-width: 190px;
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 8px;
+  align-content: center;
+  border: 2px solid aqua;
+}
+
+.watchlater-btn {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-decoration: none;
+  max-width: 300px;
+  background-color: aqua;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.watchlater-btn:hover {
+  color: aqua;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-decoration: none;
+  max-width: 310px;
+  background-color: #fff;
+  border: 2px solid aqua;
+  transition: all 0.6s;
+  /* padding: 10px 12px; */
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-div-movie {
+  display: flex;
+  flex-direction: row;
+  column-gap: 4rem;
+  row-gap: 5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
